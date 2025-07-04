@@ -6,3 +6,13 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF) # выключаем MSVC расширения, чтобы код был максимально переносим
 
+# Добавляем исполняемый target
+add_executable(threadLifecycle
+    "${CMAKE_CURRENT_SOURCE_DIR}/threadLifecycle/cpp/threadLifecycle.cpp"
+)
+
+# Указываем, где лежат наши .hpp
+target_include_directories(threadLifecycle
+    PRIVATE
+        "${CMAKE_CURRENT_SOURCE_DIR}/threadLifecycle"
+)
