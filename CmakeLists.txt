@@ -10,6 +10,9 @@ set(CMAKE_CXX_EXTENSIONS OFF) # выключаем MSVC расширения, ч
 add_executable(threadLifecycle
     "${CMAKE_CURRENT_SOURCE_DIR}/threadLifecycle/cpp/threadLifecycle.cpp"
 )
+add_executable(DataRaces
+    "${CMAKE_CURRENT_SOURCE_DIR}/DataRaces/DataRaces.cpp"
+)
 
 # Указываем, где лежат наши .hpp
 target_include_directories(threadLifecycle
