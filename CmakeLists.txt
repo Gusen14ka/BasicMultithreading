@@ -13,6 +13,9 @@ add_executable(threadLifecycle
 add_executable(DataRaces
     "${CMAKE_CURRENT_SOURCE_DIR}/DataRaces/DataRaces.cpp"
 )
+add_executable(producerConsumer
+    "${CMAKE_CURRENT_SOURCE_DIR}/producerConsumer/producerConsumer.cpp"
+)
 
 # Указываем, где лежат наши .hpp
 target_include_directories(threadLifecycle
