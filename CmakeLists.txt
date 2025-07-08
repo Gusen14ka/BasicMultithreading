@@ -16,6 +16,9 @@ add_executable(DataRaces
 add_executable(producerConsumer
     "${CMAKE_CURRENT_SOURCE_DIR}/producerConsumer/producerConsumer.cpp"
 )
+add_executable(asyncFibonacci
+    "${CMAKE_CURRENT_SOURCE_DIR}/asyncFibonacci/asyncFibonacci.cpp"
+)
 
 # Указываем, где лежат наши .hpp
 target_include_directories(threadLifecycle
