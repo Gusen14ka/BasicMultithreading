@@ -45,7 +45,6 @@ void increaseSpinLockAtom(Sp& sl){
         counter++;
         std::ostringstream ss;
         ss << std::this_thread::get_id();
-        //std::cout << "Thread " << ss.str() << " increased counter to " << counter << std::endl;
         sl.unlock();
     }  
 }

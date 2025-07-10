@@ -22,6 +22,9 @@ add_executable(asyncFibonacci
 add_executable(spinLock
     "${CMAKE_CURRENT_SOURCE_DIR}/spinLock/spinLock.cpp"
 )
+add_executable(threadPool
+    "${CMAKE_CURRENT_SOURCE_DIR}/threadPool/threadPool.cpp"
+)
 
 # Указываем, где лежат наши .hpp
 target_include_directories(threadLifecycle
